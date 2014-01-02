@@ -82,9 +82,9 @@ ecb.returns <- function(x,y){
 tsne.dow <- tsne(
   t(as.matrix(returns)),
   epoch_callback = ecb.returns,
-  max_iter=5000,
-  perplexity = 5,
-  initial_dims = 3
+  max_iter=2000,
+  perplexity = 4,
+  initial_dims = 2
 )
 #plot(tsne.dow)
 
